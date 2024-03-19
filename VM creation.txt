@@ -1,0 +1,14 @@
+Creating a free virtual machine in Azure cloud.
+
+1.Log in  Microsoft Azure cloud account and in the home page we are able to see various methods to create a Virtual machine(VM) in azure cloud.
+2.We can select create a resource and then it will navigate to another page which have virtual machine option or we can directly click on virtual machine in home page itself and it will redirect to VM creating page.
+3.Here we can select create option and select azure virtual machine and it will create a VM hosted by azure.
+4.In next page we need to fill project details and for subsrciption i have selected free trial and then create a resource group,here i created RG1.
+5.Then we need to give Instance details i.e. Virtual machine name (eg VM1),Region (eg.Asia pacific South India),security type, and VM image - here i have selected kali linux 2023.3 -x64 gen2 as image.
+6.Then select size of image which we can select according to subscription which are free service available (eg Standard_B1s-1vcpu,1GiB memory).
+7.After this step complete Administrator account.In authentication type select SSH public key and create username, and in SSH public key source select generate new key pair.Then provide a key pair name for SSH public key.
+8.In Inbound port rules select allow selected ports option.Then select SSH (22).
+9.Click on Next:disk and select OS disk type as standard SSD.After that in Data disks, create and attach a new disk with default values for kali linux image.
+10.Set default values for Networking,Management,Monitoring,Advanced,Tags pages and then click on review + create option.
+11.After deploying the VM you will be able to see all details like IP addresses,image details,disk details etc and we have created a VM inside azure cloud.
+12.By clicking connect we can coonect VM using various mathods like SSH using azure CLI, Native SSH,RDP,Serial console etc.
